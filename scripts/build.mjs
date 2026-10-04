@@ -6,7 +6,7 @@
 //   node scripts/build.mjs --config x.json --out dir
 
 import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
-import { dirname, join, resolve, sep } from "node:path";
+import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -45,14 +45,11 @@ const escapeHtml = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace
 
 rmSync(outDir, { recursive: true, force: true });
 mkdirSync(outDir, { recursive: true });
-cpSync(root, outDir, {
-  recursive: true,
-  filter: (src) => {
-    if (src === root) return true;
-    const first = src.slice(root.length + 1).split(sep)[0];
-    return !excluded.has(first);
-  },
-});
+// Copy entry by entry: cpSync refuses to copy the repo root into a subfolder of itself (_site).
+for (const name of readdirSync(root)) {
+  if (excluded.has(name) || resolve(root, name) === outDir) continue;
+  cpSync(join(root, name), join(outDir, name), { recursive: true });
+}
 
 function* htmlFiles(dir) {
   for (const name of readdirSync(dir)) {
