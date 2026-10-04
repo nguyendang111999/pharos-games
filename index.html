@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pharos Games — Casual &amp; Puzzle Games for Mobile</title>
+  <meta name="description" content="Pharos Games is an indie studio making casual and puzzle games for mobile. Easy to pick up, satisfying to solve.">
+  <meta name="theme-color" content="#0b1d3f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pharos Games — Casual &amp; Puzzle Games for Mobile">
+  <meta property="og:description" content="An indie studio making casual and puzzle games for mobile. Easy to pick up, satisfying to solve.">
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="band hero">
+    <div class="container">
+      <header class="site-header">
+        <a class="brand" href="./">
+          <img src="assets/img/logo.svg" alt="" width="38" height="38">
+          Pharos Games
+        </a>
+        <nav class="nav" aria-label="Main">
+          <a href="#games">Games</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <div class="hero-inner">
+        <div>
+          <h1>Small games.<br><span>Bright ideas.</span></h1>
+          <p class="lead">We make casual and puzzle games for mobile: easy to pick up, satisfying to solve, and perfect for a few relaxing minutes.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#games">See our games</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <svg class="hero-art" viewBox="0 0 480 440" role="img" aria-label="A lighthouse shining over the sea, surrounded by floating colorful puzzle tiles">
+          <defs>
+            <linearGradient id="sky-grad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#13306a"/>
+              <stop offset="1" stop-color="#2d62b8"/>
+            </linearGradient>
+            <clipPath id="scene-clip">
+              <circle cx="240" cy="225" r="215"/>
+            </clipPath>
+            <radialGradient id="beam-grad" gradientUnits="userSpaceOnUse" cx="240" cy="108" r="250">
+              <stop offset="0" stop-color="#ffd166" stop-opacity=".75"/>
+              <stop offset="1" stop-color="#ffd166" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="glow-grad" gradientUnits="userSpaceOnUse" cx="240" cy="108" r="46">
+              <stop offset="0" stop-color="#ffd166" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#ffd166" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- night-sky porthole: everything inside is clipped to the circle -->
+          <circle cx="240" cy="225" r="215" fill="url(#sky-grad)"/>
+          <g clip-path="url(#scene-clip)">
+
+          <!-- stars -->
+          <g fill="#ffffff" opacity=".8">
+            <circle cx="170" cy="50" r="1.8"/>
+            <circle cx="120" cy="100" r="1.4"/>
+            <circle cx="310" cy="48" r="1.8"/>
+            <circle cx="360" cy="90" r="1.4"/>
+            <circle cx="92" cy="190" r="1.4"/>
+            <circle cx="402" cy="200" r="1.6"/>
+            <circle cx="205" cy="82" r="1.2"/>
+            <circle cx="280" cy="72" r="1.2"/>
+          </g>
+
+          <!-- light beams -->
+          <g class="beams">
+            <polygon points="240,108 0,40 0,176" fill="url(#beam-grad)"/>
+            <polygon points="240,108 480,40 480,176" fill="url(#beam-grad)"/>
+            <circle cx="240" cy="108" r="46" fill="url(#glow-grad)"/>
+          </g>
+
+          <!-- rock island -->
+          <path d="M96 392 Q140 336 190 328 L290 328 Q340 336 384 392 Z" fill="#1d3166"/>
+          <path d="M150 360 Q182 334 214 330 L266 330 Q298 334 330 360 Z" fill="#26407f"/>
+
+          <!-- lighthouse -->
+          <polygon points="218,124 262,124 282,330 198,330" fill="#ffffff"/>
+          <polygon points="214.5,160 265.5,160 269.4,200 210.6,200" fill="#ff6b6b"/>
+          <polygon points="206.7,240 273.3,240 277.1,280 202.9,280" fill="#ff6b6b"/>
+          <circle cx="240" cy="220" r="6" fill="#0b1d3f"/>
+          <path d="M231 330 V306 a9 9 0 0 1 18 0 V330 Z" fill="#0b1d3f"/>
+          <rect x="212" y="118" width="56" height="8" rx="4" fill="#dfe7fb"/>
+          <rect x="224" y="98" width="32" height="20" rx="3" fill="#ffd166"/>
+          <polygon points="216,98 240,72 264,98" fill="#ff6b6b"/>
+          <circle cx="240" cy="68" r="4" fill="#ffd166"/>
+
+          <!-- sea -->
+          <path d="M0 376 Q60 362 120 376 T240 376 T360 376 T480 376 V440 H0 Z" fill="#0f2a60"/>
+          <path d="M0 400 Q60 386 120 400 T240 400 T360 400 T480 400 V440 H0 Z" fill="#1a3f85" opacity=".8"/>
+
+          </g>
+          <circle cx="240" cy="225" r="215" fill="none" stroke="#ffffff" stroke-opacity=".14" stroke-width="3"/>
+
+          <!-- floating puzzle tiles -->
+          <g transform="translate(40 214) rotate(-12)">
+            <g class="float">
+              <rect width="46" height="46" rx="12" fill="#ff6b6b"/>
+              <rect x="6" y="5" width="34" height="11" rx="5.5" fill="#fff" opacity=".25"/>
+              <circle cx="23" cy="27" r="8" fill="#fff"/>
+            </g>
+          </g>
+          <g transform="translate(396 150) rotate(10)">
+            <g class="float" style="animation-delay:-1.6s">
+              <rect width="46" height="46" rx="12" fill="#2ec4b6"/>
+              <rect x="6" y="5" width="34" height="11" rx="5.5" fill="#fff" opacity=".25"/>
+              <polygon points="23,18 33,36 13,36" fill="#fff"/>
+            </g>
+          </g>
+          <g transform="translate(70 96) rotate(8)">
+            <g class="float" style="animation-delay:-3.1s">
+              <rect width="40" height="40" rx="11" fill="#8b7cf6"/>
+              <rect x="5" y="4" width="30" height="10" rx="5" fill="#fff" opacity=".25"/>
+              <rect x="12" y="19" width="16" height="16" rx="3" fill="#fff" transform="rotate(45 20 27)"/>
+            </g>
+          </g>
+          <g transform="translate(398 270) rotate(-8)">
+            <g class="float" style="animation-delay:-2.3s">
+              <rect width="42" height="42" rx="11" fill="#ffd166"/>
+              <rect x="5" y="4" width="32" height="10" rx="5" fill="#fff" opacity=".35"/>
+              <path d="M21 17v18M12 26h18" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 40 C 240 -8 480 -8 720 24 C 960 56 1200 56 1440 16 V64 H0 Z"/>
+    </svg>
+  </div>
+
+  <main id="main">
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Our games</p>
+          <h2>Pick one up. Put it down whenever.</h2>
+        </div>
+
+        <div class="card game-card">
+          <svg class="game-icon" viewBox="0 0 104 104" role="img" aria-label="Placeholder game icon with colorful puzzle tiles">
+            <rect width="104" height="104" rx="24" fill="#17336b"/>
+            <rect x="16" y="16" width="34" height="34" rx="9" fill="#ff6b6b"/>
+            <rect x="54" y="16" width="34" height="34" rx="9" fill="#2ec4b6"/>
+            <rect x="16" y="54" width="34" height="34" rx="9" fill="#8b7cf6"/>
+            <rect x="54" y="54" width="34" height="34" rx="9" fill="#ffd166"/>
+          </svg>
+          <div>
+            <span class="badge">Coming soon</span>
+            <h3>Our first puzzle game is on its way</h3>
+            <p>We're putting the finishing touches on our first mobile game. Check back soon, or get in touch if you'd like to hear when it launches.</p>
+          </div>
+        </div>
+
+        <!--
+          TEMPLATE for a published game. Copy this block, remove the "Coming soon" card above
+          (or keep both), and replace the name, description and Google Play link:
+
+        <div class="card game-card">
+          <img class="game-icon" src="assets/img/your-game-icon.png" alt="Your Game icon" width="104" height="104">
+          <div>
+            <h3>Your Game Name</h3>
+            <p>One or two sentences describing the game.</p>
+            <p><a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.pharosgames.yourgame">Get it on Google Play</a></p>
+          </div>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">About the studio</p>
+          <h2>A small, steady light in your day</h2>
+          <p>Pharos Games is an independent studio making casual and puzzle games for mobile devices. We're named after the ancient Lighthouse of Alexandria, which stood on the island of Pharos. Our goal is just as simple: be a friendly little beacon that brings a few relaxing, rewarding minutes to your day.</p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5z"/></svg>
+            </div>
+            <h3>Easy to pick up</h3>
+            <p>Simple rules and clear goals. No manual required, just jump in and play.</p>
+          </article>
+          <article class="card feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>
+            </div>
+            <h3>Satisfying to solve</h3>
+            <p>Thoughtful puzzles built around that moment when everything clicks into place.</p>
+          </article>
+          <article class="card feature">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+            </div>
+            <h3>Made for mobile</h3>
+            <p>Short sessions that fit a commute, a coffee break, or a quiet moment on the couch.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta">
+          <h2>Say hello</h2>
+          <p>Questions, feedback, bug reports, or privacy requests? We'd love to hear from you.</p>
+          <a class="btn btn-primary" href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Pharos Games. All rights reserved.</span>
+      <ul>
+        <li><a href="privacy-policy/">Privacy Policy</a></li>
+        <li><a href="terms-of-use/">Terms of Use</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
